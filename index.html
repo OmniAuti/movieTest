@@ -5,36 +5,34 @@
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./common/main.css" />
-    <link
-      rel="preload"
-      href="./videos/Aeriz_FlowerPackaging_2301910_V2.mp4"
-      as="video"
-    />
+    <link rel="stylesheet" href="../common/main.css" />
+    <!-- <link rel="preload" href="../videos/Aeriz_FlowerPackaging_2301910_V2.mp4" /> -->
   </head>
   <body>
     <div id="content">
-      <h1>Video Scrubbing</h1>
-      <h2>
-        <code>video-server-frames</code>
-      </h2>
-      <section>
-        <pre id="comments"></pre>
-      </section>
-      <section class="canvas-container" id="canvas-container">
-        <input
-          name="frames-url"
-          type="hidden"
-          value="./videos/framesAeriz/frame-{{id}}.jpg"
-          data-frame-start="1"
-          data-frame-end="273"
-          data-frame-id-padding="3"
-        />
-      </section>
+      <div class="text">
+        <h1>Video Scrubbing</h1>
+        <h2>
+          <code>video-server-frames</code>
+        </h2>
+        <section>
+          <pre id="comments"></pre>
+        </section>
+      </div>
     </div>
-    <script src="./common/utils.js"></script>
-    <script src="./common/scroll-observable.js"></script>
-    <script src="./common/canvas-frame-scrubber.js"></script>
+    <section class="canvas-container" id="canvas-container">
+      <input
+        name="frames-url"
+        type="hidden"
+        value="../videos/framesAeriz/frame-{{id}}.jpg"
+        data-frame-start="1"
+        data-frame-end="273"
+        data-frame-id-padding="3"
+      />
+    </section>
+    <script src="../common/utils.js"></script>
+    <script src="../common/scroll-observable.js"></script>
+    <script src="../common/canvas-frame-scrubber.js"></script>
     <script src="assets/frame-unpacker.js"></script>
     <script src="assets/main.js"></script>
   </body>
