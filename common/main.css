@@ -7,6 +7,8 @@ body {
   height: 10000px;
   background: #000;
   color: #eee;
+  position: relative;
+  overflow-x: hidden;
 }
 
 html.home,
@@ -21,26 +23,33 @@ a {
 #content {
   position: fixed;
   max-width: calc(100% - 20px);
-  z-index: 999;
+  z-index: 2;
   left: 50px;
   top: 50px;
 }
 
-.canvas-container {
-  max-width: calc(100% - 20px);
-  max-height: 80vh;
-  height: auto;
-}
-
 .canvas {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   position: fixed;
   top: 0;
   z-index: 1;
+  opacity: 9;
 }
 
 .cursor-loading {
   cursor: progress;
+}
+
+#demo-text {
+  position: absolute;
+  font-size: 150px;
+  top: 15%;
+  left: calc(100% + 0px);
+  z-index: 0;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  /* color: #fff; */
+  white-space: nowrap;
 }
